@@ -1,0 +1,12 @@
+body{
+    position: relative;
+    .viewcontainer{
+        margin-top: 50px;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+    }
+
+}

@@ -1,0 +1,23 @@
+<div class="container">
+    <a ui-sref="ordercreate" class="btn btn-primary">Create Order</a>
+    <h2>Order List</h2>
+    <div class="panel-group" ng-repeat="order in orders.orders">
+        <div class="panel panel-default btn"  ui-sref="ordersview({id: order.id})" >
+          <div class="panel-heading">{{order.name}}</div>
+          <div class="panel-body">Category: {{order.category}}</div>
+          <div class="panel-body">Start Date: {{order.startDate}}</div>
+          <div class="panel-body">
+              <div class="inline">
+                From: <span>{{order.locationAdress.country}}, {{order.locationAdress.city}}, {{order.locationAdress.street}}</span>
+              </div>
+              <div class="inline">
+                To: <span>{{order.destinationAdress.country}}, {{order.destinationAdress.city}}, {{order.destinationAdress.street}}</span>
+              </div>
+            </div>
+            <div class="panel-body">
+                Price: {{order.price}} Eur
+            </div>
+        </div>
+    </div>
+
+</div>

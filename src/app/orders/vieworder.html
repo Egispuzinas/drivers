@@ -1,0 +1,32 @@
+<div class="viewcontainer">
+    <div class="well well-sm" style="text-align: center">
+        <h3>{{order.order.name}}</h3>
+        <p>{{order.order.category}}</p>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h5 class="form">Description:</h5>
+            <p>{{order.order.description}}</p>
+            <p>{{order.order.price}}</p>
+        </div>
+        <div class="col-md-4">
+            <h5>Location From:</h5>
+            <p>Country: {{order.order.locationAdress.country}}</p>
+            <p>City: {{order.order.locationAdress.city}}</p>
+            <p>Street: {{order.order.locationAdress.street}}, {{order.order.locationAdress.house}}, {{order.order.locationAdress.flat}}</p>
+        </div>
+        <div class="col-md-4">
+            <h5>Location From:</h5>
+            <p>Country: {{order.order.destinationAdress.country}}</p>
+            <p>City: {{order.order.destinationAdress.city}}</p>
+            <p>Street: {{order.order.destinationAdress.street}}, {{order.order.destinationAdress.house}}, {{order.order.destinationAdress.flat}}</p>
+        </div>
+    </div>
+    <div class="row" style="text-align: center; margin-top: 20px">
+        <div class="col-md-12">
+            Start Date: {{order.order.startDate}}
+        </div>
+    </div>
+    <a ui-sref="orderedit({id: order.order.id})" class="btn btn-primary">Edit Order</a>
+    <a ng-click="order.deleteOrder(order.order)" class="btn btn-danger">Delete Order</a>
+</div>

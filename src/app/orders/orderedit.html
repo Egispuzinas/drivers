@@ -1,0 +1,44 @@
+
+<form class="order-form" style="width: 50%; padding-left: 100px;" ng-submit="order.saveOrder()">
+    <label for="order-name">Name:</label>
+    <input class="form-control" type="text" id="order-name" ng-model="order.order.name">
+    <label for="order-description">Description:</label>
+    <textarea style="resize:vertical; min-height:50px" class="form-control" type="text" id="order-description" ng-model="order.order.description"></textarea>
+    <label for="order-category">Category:</label>
+    <input class="form-control" type="text" id="order-category" ng-model="order.order.category">
+    <label for="order-size">Size m3:</label>
+    <input class="form-control" type="text" id="order-size" ng-model="order.order.m3">
+    <label for="order-weight">weight:</label>
+    <input class="form-control" type="text" id="order-weight" ng-model="order.order.weight">
+    <label for="order-price">Price:</label>
+    <input class="form-control" type="text" id="order-price" ng-model="order.order.price">
+    <label for="order-date">Start Date:</label>
+    <input class="form-control" type="text" id="order-date" ng-model="order.order.startDate">
+
+    <div class="" style="width: 49.4%; margin-top: 20px; display: inline-block">
+        <label for="order-country">Location Country:</label>
+        <input class="form-control" type="text" id="order-country" ng-model="order.order.locationAdress.country">
+        <label for="order-city">Location city:</label>
+        <input class="form-control" type="text" id="order-city" ng-model="order.order.locationAdress.city">
+        <label for="order-street">Location street:</label>
+        <input class="form-control" type="text" id="order-street" ng-model="order.order.locationAdress.street">
+        <label for="order-house">Location house:</label>
+        <input class="form-control" type="text" id="order-house" ng-model="order.order.locationAdress.house">
+        <label for="order-flat">Location flat:</label>
+        <input class="form-control" type="text" id="order-flat" ng-model="order.order.locationAdress.flat">
+    </div>
+
+    <div class="" style="width: 49.4%;margin-top: 20px; display: inline-block">
+        <label for="order-destcountry">Destination Country:</label>
+        <input class="form-control" type="text" id="order-destcountry" ng-model="order.order.destinationAdress.country">
+        <label for="order-destcity">Destination city:</label>
+        <input class="form-control" type="text" id="order-destcity" ng-model="order.order.destinationAdress.city">
+        <label for="order-deststreet">Destination street:</label>
+        <input class="form-control" type="text" id="order-deststreet" ng-model="order.order.destinationAdress.street">
+        <label for="order-desthouse">Destination house:</label>
+        <input class="form-control" type="text" id="order-desthouse" ng-model="order.order.destinationAdress.house">
+        <label for="order-destflat">Destination flat:</label>
+        <input class="form-control" type="text" id="order-destflat" ng-model="order.order.destinationAdress.flat">
+    </div>
+    <input type="submit" class="btn btn-primary" value="EDIT ORDER">
+</form>
